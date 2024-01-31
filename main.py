@@ -11,7 +11,7 @@ import warnings
 warnings.filterwarnings("ignore")
 
 ##### Read data  #####
-df = pd.read_csv('cdp_2017to2023.csv').iloc[:, :12]
+df = pd.read_csv('cdp_data.csv').iloc[:, :12]
 df['purchasedate'] = pd.to_datetime(df['purchasedate'], format='%Y/%m/%d')
 
 ##### Create RFM table ("result") #####
